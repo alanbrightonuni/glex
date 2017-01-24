@@ -4,13 +4,13 @@ CubeAsset::CubeAsset() {
   // model coordinates, origin at centre.
   GLfloat vertex_buffer [] {
 
-		//front
+		//front of the cube
     -0.5, -0.5, -0.5
     , -0.5,  0.5, -0.5
     ,  0.5, -0.5, -0.5
     ,  0.5,  0.5, -0.5
 
-		//back
+		//back of the cube
     ,  0.5, -0.5,  0.5
     ,  0.5,  0.5,  0.5
     , -0.5, -0.5,  0.5
@@ -21,7 +21,7 @@ CubeAsset::CubeAsset() {
   element_buffer_length = 36;
 
 
-
+		//the vertices that make up each side of the cube, 2 triangles per face
   GLuint element_buffer []  {
      0, 1, 2,
      1, 3, 2,
